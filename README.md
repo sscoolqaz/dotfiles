@@ -80,7 +80,7 @@ Dotfiles can be installed in any directory, but probably somewhere under
 simple:
 
 ```sh
-git clone https://github.com/z0rc/dotfiles.git "$HOME/.local/dotfiles"
+git clone https://github.com/sscoolqaz/dotfiles.git "$HOME/.local/dotfiles"
 $HOME/.local/dotfiles/deploy.zsh
 chsh -s /bin/zsh
 ```
