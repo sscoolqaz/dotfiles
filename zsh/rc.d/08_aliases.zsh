@@ -40,3 +40,5 @@ alias exit=" exit"
 (( ${+commands[fd]} )) && alias fd="noglob fd"
 (( ${+commands[man]} )) && alias man="nocorrect man"
 (( ${+commands[sudo]} )) && alias sudo="noglob wrap-sudo " # trailing space is needed to enable alias expansion
+(( ${+commands[wget]} )) && alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
+
