@@ -1,5 +1,3 @@
-setopt extendedglob
-
 if [[ -d $XDG_DATA_HOME/LunarG_VK/ ]]; then
 
     export VULKAN_SDK="$(print -rl $XDG_DATA_HOME/LunarG_VK/1.*.*.*(N) | sort -V | tail -n 1)/x86_64"
