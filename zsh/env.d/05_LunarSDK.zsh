@@ -1,6 +1,6 @@
-if [[ -d $XDG_DATA_HOME/LunarG_VK/ ]]; then
+if [[ -d $XDG_DATA_HOME/lunarg/ ]]; then
 
-    export VULKAN_SDK="$(print -rl $XDG_DATA_HOME/LunarG_VK/1.*.*.*(N) | sort -V | tail -n 1)/x86_64"
+    export VULKAN_SDK="$(print -rl $XDG_DATA_HOME/lunarg/1.*.*.*(N) | sort -V | tail -n 1)/x86_64"
 
     export PATH=$VULKAN_SDK/bin:$PATH
     export LD_LIBRARY_PATH=$VULKAN_SDK/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}
