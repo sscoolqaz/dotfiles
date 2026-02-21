@@ -1,10 +1,8 @@
 setopt extendedglob
 
-if [[ -d ~/dev/LunarG_VK ]]; then
-    
-    latest_dir=$(print -rl ~/dev/LunarG_VK/1.*.*.*(N) | sort -V | tail -n 1)
+if [[ -d $XDG_DATA_HOME/LunarG_VK/ ]]; then
 
-    export VULKAN_SDK="$latest_dir/x86_64"
+    export VULKAN_SDK="$(print -rl $XDG_DATA_HOME/LunarG_VK/1.*.*.*(N) | sort -V | tail -n 1)/x86_64"
 
     export PATH=$VULKAN_SDK/bin:$PATH
     export LD_LIBRARY_PATH=$VULKAN_SDK/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}
