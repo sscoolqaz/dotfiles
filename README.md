@@ -29,7 +29,6 @@ with [zero home presence](#zero-home-presence).
   * [autoenv plugin](https://github.com/Tarrasch/zsh-autoenv)
   * [autopair plugin](https://github.com/hlissner/zsh-autopair)
   * [clean Zsh implementation of `z`](https://github.com/agkozak/zsh-z)
-* Vim [configuration](vim/vimrc) and [plugins](vim/pack)
 * Neovim [configuration](nvim/init.lua) and [plugins](nvim/plugins)
 * Tmux [configuration](tmux/tmux.conf) and [plugins](tmux/plugins)
 * Yazi [configuration](yazi/yazi.toml) and [plugins](yazi/plugins)
@@ -55,10 +54,6 @@ with [zero home presence](#zero-home-presence).
   * [rbenv](https://github.com/rbenv/rbenv)
 
 ## Installation
-
-> [!WARNING]
-> I'm in process on switching to Neovim. Vim configuration isn't maintained
-> anymore, might be removed in future.
 
 ### Requirements
 
@@ -110,12 +105,6 @@ module.
 Neovim configuration is tested with latest released Neovim version only. At the
 moment of writing it's version 0.11.0.
 
-## Vim Version
-
-Vim 9.1 or higher is required to support the XDG Base Directory Specification.
-To use all bundled vim plugins, install vim with Python and Ruby support
-built-in.
-
 ## Configuration
 
 ### Git Configuration
@@ -150,10 +139,6 @@ Local configuration can be added to:
 * `$DOTFILES/nvim/init/0[1-9]_*` (like `01_local.lua`) to load after default
   options, but before any plugin.
 * `$DOTFILES/nvim/init/9[0-9]_*` (like `99_local.vim`) to load after plugins.
-
-### Vim Configuration
-
-Add your local configuration to `$DOTFILES/vim/vimrc.local`.
 
 ### Local Paths
 
