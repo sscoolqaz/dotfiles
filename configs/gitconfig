@@ -6,6 +6,7 @@
 [push]
 	default = current
 	followTags = true
+	autoSetupRemote = true
 [branch]
 	autoSetupRebase = always
 	sort = -committerdate
