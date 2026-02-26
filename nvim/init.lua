@@ -42,7 +42,8 @@ vim.g.loaded_node_provider = 0
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
-vim.lsp.set_log_level(vim.log.levels.OFF)
+vim.lsp.log.set_level(vim.log.levels.OFF)
+
 vim.diagnostic.config({
   severity_sort = true,
   update_in_insert = true,
