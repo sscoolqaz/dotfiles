@@ -45,5 +45,6 @@ vim.g.loaded_netrwPlugin = 1
 vim.lsp.set_log_level(vim.log.levels.OFF)
 vim.diagnostic.config({
   severity_sort = true,
+  update_in_insert = true,
   virtual_text = { source = 'if_many' },
 })
