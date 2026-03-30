@@ -31,6 +31,12 @@ base = "#1e1e2e"
 mantle = "#181825"
 crust = "#11111b"
 
+[git_metrics]
+added_style = "green"
+deleted_style = "red"
+format = '[+$added]($added_style)/[-$deleted]($deleted_style) '
+disabled = false
+
 [aws]
 symbol = " "
 
