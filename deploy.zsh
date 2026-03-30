@@ -63,6 +63,7 @@ zf_ln -sfn $SCRIPT_DIR/yazi/plugins $XDG_CONFIG_HOME/yazi/plugins
 zf_ln -sfn $SCRIPT_DIR/gpg/gpg.conf $XDG_CONFIG_HOME/gnupg/gpg.conf
 zf_ln -sfn $SCRIPT_DIR/gpg/gpg-agent.conf $XDG_CONFIG_HOME/gnupg/gpg-agent.conf
 zf_ln -sfn $SCRIPT_DIR/tools/git-diff-pager $HOME/.local/bin/git-diff-pager
+zf_ln -sfn $SCRIPT_DIR/configs/starship $XDG_CONFIG_HOME/starship.toml
 print "  ...done"
 
 # Make sure submodules are installed
@@ -160,10 +161,9 @@ print "Linking env-wrappers' plugins..."
     zf_ln -sfn $SCRIPT_DIR/env-wrappers/rbenv/default-gems $XDG_DATA_HOME/rbenv/default-gems
 print "  ...done"
 
-# Trigger zsh run with powerlevel10k prompt to download gitstatusd
-print "Downloading gitstatusd for powerlevel10k..."
-zsh -is <<< '' &> /dev/null
-print "  ...done"
+print "Installing starship"
+curl -sS https://starship.rs/install.sh | sh -s -- -y --bin-dir "$HOME/.local/bin/" > /dev/null
+print "  ...dont"
 
 # Install task to pull updates every midnight
 print "Installing periodic update task..."
