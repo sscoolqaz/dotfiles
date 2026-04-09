@@ -239,6 +239,3 @@
 [submodule "zsh/plugins/z"]
 	path = zsh/plugins/z
 	url = https://github.com/agkozak/zsh-z.git
-[submodule "nvim/plugins/cmake-tools"]
-	path = nvim/plugins/cmake-tools
-	url = https://github.com/Civitasv/cmake-tools.nvim.git

@@ -63,6 +63,20 @@ require('conform').setup({
   formatters_by_ft = {
     lua = { 'stylua' },
     terraform = { 'terraform_fmt' },
+    libvirt_xml = { 'xmlformat' },
+  },
+  formatters = {
+    xmlformat = {
+      command = 'xml-formatter',
+      args = {
+        '--indentation',
+        '  ',
+        '--collapseContent',
+        'true',
+        '--lineSeparator',
+        '\n',
+      },
+    },
   },
   format_on_save = {
     timeout_ms = 500,
