@@ -155,9 +155,6 @@
 [submodule "nvim/plugins/schemastore"]
 	path = nvim/plugins/schemastore
 	url = https://github.com/b0o/SchemaStore.nvim.git
-[submodule "nvim/plugins/solarized"]
-	path = nvim/plugins/solarized
-	url = https://github.com/maxmx03/solarized.nvim.git
 [submodule "nvim/plugins/tmux"]
 	path = nvim/plugins/tmux
 	url = https://github.com/aserowy/tmux.nvim.git
