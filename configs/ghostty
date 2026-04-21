@@ -10,3 +10,35 @@ bell-features = no-attention
 link-previews = true
 
 config-file = ?config-local
+
+font-family = Cartograph CF
+# Orchis Dark (KDE + nvidia variant tuned)
+
+background = #232832
+foreground = #D2D8E3
+
+cursor-color = #5AA7C7
+selection-background = #3A4150
+selection-foreground = #ECEFF4
+
+# Normal colors
+palette = 0=#2E3440
+palette = 1=#C35B65
+palette = 2=#98C379
+palette = 3=#E5C07B
+palette = 4=#5AA7C7
+palette = 5=#B48EAD
+palette = 6=#56B6C2
+palette = 7=#D8DEE9
+
+# Bright colors
+palette = 8=#4C566A
+palette = 9=#D16D77
+palette = 10=#A9D68A
+palette = 11=#F0D399
+palette = 12=#6CB6D9
+palette = 13=#C8A1C9
+palette = 14=#6FC7D3
+palette = 15=#ECEFF4
+background-blur = true
+background-opacity = 0.8
