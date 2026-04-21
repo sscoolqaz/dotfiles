@@ -22,7 +22,7 @@ with [zero home presence](#zero-home-presence).
 ## Features
 
 * Extensive Zsh [configuration](zsh/rc.d) and [plugins](zsh/plugins), including:
-  * [powerlevel10k](https://github.com/romkatv/powerlevel10k) prompt
+  * [starship](https://github.com/starship/starship) prompt
   * [additional completions](https://github.com/zsh-users/zsh-completions)
   * [async autosuggestions plugin](https://github.com/zsh-users/zsh-autosuggestions)
   * [syntax highlighting plugin](https://github.com/zsh-users/zsh-syntax-highlighting)
@@ -103,7 +103,7 @@ module.
 ## Neovim Version
 
 Neovim configuration is tested with latest released Neovim version only. At the
-moment of writing it's version 0.11.
+moment of writing it's version 0.12.
 
 ## Configuration
 
