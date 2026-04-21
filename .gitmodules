@@ -239,3 +239,6 @@
 [submodule "zsh/plugins/z"]
 	path = zsh/plugins/z
 	url = https://github.com/agkozak/zsh-z.git
+[submodule "nvim/plugins/catpuccin"]
+	path = nvim/plugins/catpuccin
+	url = https://github.com/catppuccin/nvim.git
