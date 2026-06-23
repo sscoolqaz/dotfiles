@@ -37,3 +37,6 @@ MANPATH=$XDG_DATA_HOME/man:$MANPATH
 
 # Add go binaries to paths
 path=($GOPATH/bin $path)
+
+# Add bun binaries to paths
+path=($BUN_INSTALL/bin $path)
