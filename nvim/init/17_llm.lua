@@ -1,15 +1,9 @@
 require('codecompanion').setup({
   ignore_warnings = true,
   strategies = {
-    chat = {
-      adapter = 'gemini_cli',
-    },
-    inline = {
-      adapter = 'gemini_cli',
-    },
-    cmd = {
-      adapter = 'gemini_cli',
-    },
+    inline = { adapter = 'claude_code' },
+    cmd = { adapter = 'claude_code' },
+    chat = { adapter = 'claude_code' },
   },
   display = {
     action_palette = {
