@@ -20,9 +20,9 @@ XDG_STATE_HOME=$HOME/.local/state
 
 # Create required directories
 print "Creating required directory tree..."
-zf_mkdir -p $XDG_CONFIG_HOME/{ghostty,git/local,htop,ranger,gem,tig,gnupg,nvim/{plugin,after},yazi}
-zf_mkdir -p $XDG_CACHE_HOME/{vim/{backup,swap,undo},zsh,tig}
-zf_mkdir -p $XDG_DATA_HOME/{{goenv,jenv,luaenv,nodenv,phpenv,plenv,pyenv,rbenv}/plugins,zsh,man/man1,vim/spell,nvim/site/pack/plugins,lunarg}
+zf_mkdir -p $XDG_CONFIG_HOME/{ghostty,git/local,htop,ranger,gem,tig,gnupg,nvim/{plugin,after},yazi,quilt}
+zf_mkdir -p $XDG_CACHE_HOME/{vim/{backup,swap,undo},zsh,tig,ccache,nuget,nv}
+zf_mkdir -p $XDG_DATA_HOME/{{goenv,jenv,luaenv,nodenv,phpenv,plenv,pyenv,rbenv}/plugins,zsh,man/man1,vim/spell,nvim/site/pack/plugins,lunarg,android,dotnet,nuget/packages,xlcore}
 zf_mkdir -p $XDG_STATE_HOME
 zf_mkdir -p $HOME/.local/{bin,etc}
 zf_chmod 700 $XDG_CONFIG_HOME/gnupg
@@ -64,6 +64,7 @@ zf_ln -sfn $SCRIPT_DIR/gpg/gpg.conf $XDG_CONFIG_HOME/gnupg/gpg.conf
 zf_ln -sfn $SCRIPT_DIR/gpg/gpg-agent.conf $XDG_CONFIG_HOME/gnupg/gpg-agent.conf
 zf_ln -sfn $SCRIPT_DIR/tools/git-diff-pager $HOME/.local/bin/git-diff-pager
 zf_ln -sfn $SCRIPT_DIR/configs/starship $XDG_CONFIG_HOME/starship.toml
+zf_ln -sfn $SCRIPT_DIR/configs/quiltrc $XDG_CONFIG_HOME/quilt/quiltrc
 print "  ...done"
 
 # Make sure submodules are installed

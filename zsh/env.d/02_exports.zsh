@@ -60,4 +60,12 @@ export CARGO_HOME=$XDG_DATA_HOME/cargo
 export BUN_INSTALL=$XDG_DATA_HOME/bun
 export GRADLE_USER_HOME="$XDG_DATA_HOME"/gradle
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
+export ANDROID_USER_HOME=$XDG_DATA_HOME/android
+export CCACHE_DIR=$XDG_CACHE_HOME/ccache
+export DOTNET_CLI_HOME=$XDG_DATA_HOME/dotnet
+export NUGET_PACKAGES=$XDG_DATA_HOME/nuget/packages
+export NUGET_HTTP_CACHE_PATH=$XDG_CACHE_HOME/nuget
+export CUDA_CACHE_PATH=$XDG_CACHE_HOME/nv
+export XL_HOME=$XDG_DATA_HOME/xlcore
+export QUILTRC=$XDG_CONFIG_HOME/quilt/quiltrc
 
