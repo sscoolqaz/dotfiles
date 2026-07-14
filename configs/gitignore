@@ -68,3 +68,5 @@ Session.vim
 .DS_Store
 
 # vi: ft=gitignore
+
+**/.claude/settings.local.json
