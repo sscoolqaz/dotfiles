@@ -18,6 +18,7 @@ alias clear=" clear-screen-soft-bottom"
 (( ${+commands[quilt]} )) && alias quilt="quilt --quiltrc $DOTFILES/configs/quiltrc"
 (( ${+commands[tmux]} )) && alias stmux="tmux new-session 'sudo --login'"
 (( ${+commands[wget]} )) && alias wget="wget --hsts-file=$XDG_CACHE_HOME/wget-hsts"
+(( ${+commands[nvidia-settings]} )) && alias nvidia-settings="nvidia-settings --config=$XDG_CONFIG_HOME/nvidia/settings-rc"
 (( ${+commands[ls]} )) && {
     alias ls="ls --group-directories-first --color=auto --hyperlink=auto --classify"
     alias ll="LC_COLLATE=C ls -l -v --almost-all --human-readable"
@@ -40,5 +41,4 @@ alias exit=" exit"
 (( ${+commands[fd]} )) && alias fd="noglob fd"
 (( ${+commands[man]} )) && alias man="nocorrect man"
 (( ${+commands[sudo]} )) && alias sudo="noglob wrap-sudo " # trailing space is needed to enable alias expansion
-(( ${+commands[wget]} )) && alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
 

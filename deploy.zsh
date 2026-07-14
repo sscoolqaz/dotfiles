@@ -20,9 +20,9 @@ XDG_STATE_HOME=$HOME/.local/state
 
 # Create required directories
 print "Creating required directory tree..."
-zf_mkdir -p $XDG_CONFIG_HOME/{ghostty,git/local,htop,ranger,gem,tig,gnupg,nvim/{plugin,after},yazi,quilt}
-zf_mkdir -p $XDG_CACHE_HOME/{vim/{backup,swap,undo},zsh,tig,ccache,nuget,nv}
-zf_mkdir -p $XDG_DATA_HOME/{{goenv,jenv,luaenv,nodenv,phpenv,plenv,pyenv,rbenv}/plugins,zsh,man/man1,vim/spell,nvim/site/pack/plugins,lunarg,android,dotnet,nuget/packages,xlcore}
+zf_mkdir -p $XDG_CONFIG_HOME/{ghostty,git/local,htop,ranger,gem,tig,gnupg,nvim/{plugin,after},yazi,quilt,nvidia,claude}
+zf_mkdir -p $XDG_CACHE_HOME/{vim/{backup,swap,undo},zsh,tig,ccache,nuget,nv,node-gyp}
+zf_mkdir -p $XDG_DATA_HOME/{{goenv,jenv,luaenv,nodenv,phpenv,plenv,pyenv,rbenv}/plugins,zsh,man/man1,vim/spell,nvim/site/pack/plugins,lunarg,android,dotnet,nuget/packages,xlcore,idapro}
 zf_mkdir -p $XDG_STATE_HOME
 zf_mkdir -p $HOME/.local/{bin,etc}
 zf_chmod 700 $XDG_CONFIG_HOME/gnupg

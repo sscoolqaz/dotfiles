@@ -45,6 +45,7 @@ export PACKER_CONFIG=$XDG_CONFIG_HOME/packer
 export PACKER_CACHE_DIR=$XDG_CACHE_HOME/packer
 export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/config
 export NPM_CONFIG_CACHE=$XDG_CACHE_HOME/npm
+export npm_config_devdir=$XDG_CACHE_HOME/node-gyp
 export HTTPIE_CONFIG_DIR=$XDG_CONFIG_HOME/httpie
 export ANSIBLE_LOCAL_TEMP=$XDG_RUNTIME_DIR/ansible/tmp
 export GOPATH=$XDG_DATA_HOME/go
@@ -68,4 +69,6 @@ export NUGET_HTTP_CACHE_PATH=$XDG_CACHE_HOME/nuget
 export CUDA_CACHE_PATH=$XDG_CACHE_HOME/nv
 export XL_HOME=$XDG_DATA_HOME/xlcore
 export QUILTRC=$XDG_CONFIG_HOME/quilt/quiltrc
+export IDAUSR=$XDG_DATA_HOME/idapro
+export CLAUDE_CONFIG_DIR=$XDG_CONFIG_HOME/claude
 
