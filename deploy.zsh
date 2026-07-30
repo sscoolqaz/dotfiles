@@ -161,7 +161,8 @@ print "  ...done"
 
 print "Installing starship"
 curl -sS https://starship.rs/install.sh | sh -s -- -y --bin-dir "$HOME/.local/bin/" > /dev/null
-print "  ...dont"
+print "  ...done"
+
 
 # Install task to pull updates every midnight
 print "Installing periodic update task..."
@@ -179,19 +180,21 @@ if (( ${+commands[systemctl]} )); then
     fi
     zf_mkdir -p $systemd_unit_dir
 
-    service_name=pull-dotfiles.service
-    service_content="[Unit]
+service_name=pull-dotfiles.service
+cat > "$systemd_unit_dir/$service_name" <<EOF
+[Unit]
 Description=Pull dotfiles update
 After=network-online.target
 
 [Service]
 Type=oneshot
 ExecStart=/usr/bin/git -c user.name=systemd.update -c user.email=systemd@localhost pull
-WorkingDirectory=$SCRIPT_DIR"
-    print -r -- $service_content > $systemd_unit_dir/$service_name
+WorkingDirectory=$SCRIPT_DIR
+EOF
 
-    timer_name=pull-dotfiles.timer
-    timer_content="[Unit]
+timer_name=pull-dotfiles.timer
+cat > "$systemd_unit_dir/$timer_name" <<EOF
+[Unit]
 Description=Pull dotfiles update daily
 
 [Timer]
@@ -200,13 +203,13 @@ RandomizedDelaySec=120s
 Persistent=true
 
 [Install]
-WantedBy=timers.target"
-    print -r -- $timer_content > $systemd_unit_dir/$timer_name
-
+WantedBy=timers.target
+EOF
+    
     if ${systemctl_cmd[@]} daemon-reload > /dev/null && ${systemctl_cmd[@]} enable --now $timer_name > /dev/null; then
        print "  ...done"
     else
-       print "Failed to install systemd timer. Check permissions and systemd setup"
+       print "Failed to install systemd unit files. Check permissions and systemd setup"
     fi
 elif (( ${+commands[crontab]} )); then
     print "  ...cron detected, installing job for periodic updates..."
