@@ -74,4 +74,6 @@ export OLLAMA_MODELS=$XDG_DATA_HOME/ollama/.ollama/models
 export NGC_CLI_HOME=$XDG_CONFIG_HOME/ngc
 export RUSTUP_HOME=$XDG_DATA_HOME/rustup
 export PYTHON_HISTORY=$XDG_STATE_HOME/python_history
-
+export KUBECACHEDIR=$XDG_CACHE_HOME/kube
+export GEMINI_CLI_HOME=$XDG_CONFIG_HOME/gemini
+export WGETRC=$XDG_CONFIG_HOME/wgetrc
