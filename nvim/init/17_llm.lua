@@ -1,5 +1,4 @@
 require('codecompanion').setup({
-  ignore_warnings = true,
   adapters = {
     acp = {
       extend = vim.g.llm_acp_extend,
@@ -10,14 +9,11 @@ require('codecompanion').setup({
     cmd = { adapter = 'claude_code' },
     chat = { adapter = 'claude_code' },
   },
-  display = {
-    action_palette = {
-      provider = 'mini_pick',
-    },
-    diff = {
-      provider = 'mini_diff',
-    },
-  },
+  display = { action_palette = {
+    provider = 'mini_pick',
+  }, diff = {
+    provider = 'mini_diff',
+  } },
   extensions = {
     spinner = {},
   },
