@@ -40,3 +40,6 @@ path=($GOPATH/bin $path)
 
 # Add bun binaries to paths
 path=($BUN_INSTALL/bin $path)
+
+# Force path arrays to have unique values only
+typeset -U path cdpath fpath manpath
