@@ -20,7 +20,7 @@ XDG_STATE_HOME=$HOME/.local/state
 
 # Create required directories
 print "Creating required directory tree..."
-zf_mkdir -p $XDG_CONFIG_HOME/{ghostty,git/local,htop,ranger,gem,tig,gnupg,nvim/{plugin,after},yazi,quilt,nvidia,claude}
+zf_mkdir -p $XDG_CONFIG_HOME/{ghostty,git/local,htop,ranger,gem,tig,gnupg,nvim/{plugin,after},yazi,nvidia,claude}
 zf_mkdir -p $XDG_CACHE_HOME/{vim/{backup,swap,undo},zsh,ccache,nuget,nv,node-gyp}
 zf_mkdir -p $XDG_DATA_HOME/{{goenv,jenv,luaenv,nodenv,phpenv,plenv,pyenv,rbenv}/plugins,zsh,man/man1,vim/spell,nvim/site/pack/plugins,lunarg,android,dotnet,nuget/packages,idapro}
 zf_mkdir -p $XDG_STATE_HOME
@@ -65,7 +65,6 @@ zf_ln -sfn $SCRIPT_DIR/gpg/gpg.conf $XDG_CONFIG_HOME/gnupg/gpg.conf
 zf_ln -sfn $SCRIPT_DIR/gpg/gpg-agent.conf $XDG_CONFIG_HOME/gnupg/gpg-agent.conf
 zf_ln -sfn $SCRIPT_DIR/tools/git-diff-pager $HOME/.local/bin/git-diff-pager
 zf_ln -sfn $SCRIPT_DIR/configs/starship $XDG_CONFIG_HOME/starship.toml
-zf_ln -sfn $SCRIPT_DIR/configs/quiltrc $XDG_CONFIG_HOME/quilt/quiltrc
 print "  ...done"
 
 # Make sure submodules are installed
