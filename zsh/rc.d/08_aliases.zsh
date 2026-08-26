@@ -12,7 +12,6 @@ alias clear=" clear-screen-soft-bottom"
 # Handy stuff and a bit of XDG compliance
 (( ${+commands[quilt]} )) && alias quilt="quilt --quiltrc $DOTFILES/configs/quiltrc"
 (( ${+commands[tmux]} )) && alias stmux="tmux new-session 'sudo --login'"
-(( ${+commands[wget]} )) && alias wget="wget --hsts-file=$XDG_CACHE_HOME/wget-hsts"
 (( ${+commands[nvidia-settings]} )) && alias nvidia-settings="nvidia-settings --config=$XDG_CONFIG_HOME/nvidia/settings-rc"
 (( ${+commands[steam]} )) && alias steam="steam -system-composer"
 
