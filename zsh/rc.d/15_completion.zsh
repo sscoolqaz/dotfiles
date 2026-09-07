@@ -14,6 +14,11 @@ if [[ -d $XDG_CACHE_HOME/zsh/fpath ]]; then
     fpath=($XDG_CACHE_HOME/zsh/fpath $fpath)
 fi
 
+# Generate and cache completions for tools that ship their own, if installed
+(( ${+commands[bun]} )) && compdefcache bun completions
+(( ${+commands[uv]} )) && compdefcache uv generate-shell-completion zsh
+(( ${+commands[uvx]} )) && compdefcache uvx --generate-shell-completion zsh
+
 # Additional completions
 fpath=($ZDOTDIR/plugins/completions/src $ZDOTDIR/plugins/git-completion/src $fpath)
 
@@ -41,6 +46,13 @@ else
     compinit -i -u -C -d $XDG_CACHE_HOME/zsh/compdump
 fi
 
+# bunx is a symlink to bun; alias it since bun's own completion only registers itself
+(( ${+commands[bunx]} )) && compdef _bun bunx
+
 # Enable bash completions too
 autoload -Uz bashcompinit
 bashcompinit
+
+# Source bundled bash completions for tools with no native zsh completion
+(( ${+commands[winetricks]} )) && source /usr/share/bash-completion/completions/winetricks
+(( ${+commands[mokutil]} )) && source /usr/share/bash-completion/completions/mokutil

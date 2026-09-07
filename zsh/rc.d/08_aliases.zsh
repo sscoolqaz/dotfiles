@@ -19,6 +19,7 @@ alias clear=" clear-screen-soft-bottom"
 (( ${+commands[tmux]} )) && alias stmux="tmux new-session 'sudo --login'"
 (( ${+commands[wget]} )) && alias wget="wget --hsts-file=$XDG_CACHE_HOME/wget-hsts"
 (( ${+commands[nvidia-settings]} )) && alias nvidia-settings="nvidia-settings --config=$XDG_CONFIG_HOME/nvidia/settings-rc"
+(( ${+commands[steam]} )) && alias steam="steam -system-composer"
 (( ${+commands[ls]} )) && {
     alias ls="ls --group-directories-first --color=auto --hyperlink=auto --classify"
     alias ll="LC_COLLATE=C ls -l -v --almost-all --human-readable"
