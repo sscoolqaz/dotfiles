@@ -41,11 +41,5 @@ fi
 path=($HOME/.local/bin(N-/) $path)
 MANPATH=$XDG_DATA_HOME/man:$MANPATH
 
-# Add go binaries to paths
-path=($GOPATH/bin(N-/) $path)
-
-# Add bun binaries to paths
-path=($BUN_INSTALL/bin $path)
-
 # Force path arrays to have unique values only
 typeset -U path cdpath fpath manpath
