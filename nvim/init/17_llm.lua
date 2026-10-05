@@ -1,6 +1,11 @@
 require('codecompanion').setup({
   ignore_warnings = true,
-  strategies = {
+  adapters = {
+    acp = {
+      extend = vim.g.llm_acp_extend,
+    },
+  },
+  interactions = {
     inline = { adapter = 'claude_code' },
     cmd = { adapter = 'claude_code' },
     chat = { adapter = 'claude_code' },
