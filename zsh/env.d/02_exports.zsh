@@ -67,8 +67,11 @@ export DOTNET_CLI_HOME=$XDG_DATA_HOME/dotnet
 export NUGET_PACKAGES=$XDG_DATA_HOME/nuget/packages
 export NUGET_HTTP_CACHE_PATH=$XDG_CACHE_HOME/nuget
 export CUDA_CACHE_PATH=$XDG_CACHE_HOME/nv
-export XL_HOME=$XDG_DATA_HOME/xlcore
 export QUILTRC=$XDG_CONFIG_HOME/quilt/quiltrc
 export IDAUSR=$XDG_DATA_HOME/idapro
 export CLAUDE_CONFIG_DIR=$XDG_CONFIG_HOME/claude
+export OLLAMA_MODELS=$XDG_DATA_HOME/ollama/.ollama/models
+export NGC_CLI_HOME=$XDG_CONFIG_HOME/ngc
+export RUSTUP_HOME=$XDG_DATA_HOME/rustup
+export PYTHON_HISTORY=$XDG_STATE_HOME/python_history
 
