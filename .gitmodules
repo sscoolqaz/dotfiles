@@ -236,3 +236,9 @@
 [submodule "nvim/plugins/catpuccin"]
 	path = nvim/plugins/catpuccin
 	url = https://github.com/catppuccin/nvim.git
+[submodule "nvim/plugins/beepboop"]
+	path = nvim/plugins/beepboop
+	url = https://github.com/EggbertFluffle/beepboop.nvim.git
+[submodule "nvim/plugins/keeb.beepboop"]
+	path = nvim/plugins/keeb.beepboop
+	url = https://github.com/EggbertFluffle/keeb.beepboop.git
