@@ -14,3 +14,5 @@ zsh/.zlogout
 
 configs/ranger-plugins/__init__.py
 configs/ranger-plugins/__pycache__
+
+tools/agent-mailbox/__pycache__
